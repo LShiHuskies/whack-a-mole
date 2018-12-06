@@ -50,6 +50,7 @@ function bonk(event) {
   score++;
   this.classList.remove('up');
   scoreBoard.textContent = score;
+  console.log(scoreBoard);
 }
 
 moles.forEach(mole => mole.addEventListener('click', bonk));
